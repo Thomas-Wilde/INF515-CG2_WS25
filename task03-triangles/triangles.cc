@@ -45,7 +45,7 @@ bool initGLFW() {
 // ------------------------------------------------------------------------ //
 bool initGLFWWindow(Scene &s) {
   // --- create window
-  s.window = glfwCreateWindow(s.width, s.width, s.title.c_str(), NULL, NULL);
+  s.window = glfwCreateWindow(s.width, s.height, s.title.c_str(), NULL, NULL);
   if (!s.window) {
     std::cout << "Window creation failed!" << std::endl;
     return false;
